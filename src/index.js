@@ -97,7 +97,7 @@ class ActiveStorageProvider extends React.Component<Props, State> {
         'Authorization': token,
         ...csrfHeader(),
       }),
-    }).then(r => r.json())
+    }).then(r => r)
   }
 }
 
