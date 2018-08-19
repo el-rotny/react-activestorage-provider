@@ -27,7 +27,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "activestorage": "^5.2.0"
+    "activestorage": "^5.2.0",
+    "axios": "^0.18.0",
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
