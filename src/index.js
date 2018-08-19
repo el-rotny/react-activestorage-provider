@@ -8,7 +8,7 @@
  */
 
 import * as React from 'react'
-
+import axios from 'axios';
 import csrfHeader from './csrfHeader'
 import Upload from './Upload'
 
@@ -87,7 +87,7 @@ class ActiveStorageProvider extends React.Component<Props, State> {
       },
     }
 
-    return fetch(path, {
+    return axios(path, {
       credentials: 'same-origin',
       method,
       body: JSON.stringify(body),
